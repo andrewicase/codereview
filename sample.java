@@ -1,11 +1,11 @@
 // Sample Java program to do basic array manipulation
 import java.util.*;
 
-class Test
+class Sample
 {
 	/**
-	 * @param a  the array to evaluate
-	 * @return   the arrithmetic mean of the array
+	 * @param a  array to evaluate
+	 * @return   the arithmetic mean of the array
 	 */
 	public static double getMean(int a[]) {
 		size = a.Length;
@@ -14,38 +14,39 @@ class Test
 			sum += a[i];
 
 		return (double)sum / (double)size;
+		// Discus: Could this be optimized at all?
 	}
-	// Discus: Could this be optimized at all?
 
 	/**
-	 * @param a  the array to evaluate
+	 * @param a  array to evaluate
 	 * @return   the median value (the middle or average of middle values)
 	 */
 	public static double getMedian(int a[]) {
 		Arrays.sort(a);
 		return a[n/2];
-		// What's the problem with this code?
+		// What all is wrong with this code?
 		// Is the array sorted in place or do we get a new copy?
 		// Do you know if it's a deep copy or shallow copy?
 		// What's the big-O analysis of sort?
 	}
 
 	/**
-	 * @param a  the array to evaluate
+	 * @param a  array to evaluate
 	 * @return   the largest value in the array
 	 */
 	public static double getMax(int a[]) {
 		size = a.Length;
 		Arrays.sort(a);
 		return a[size]
+		// Discuss: any function side-effects?
 	}
 
 	/**
-	 * @param a  the array to evaluate
+	 * @param a  array to evaluate
 	 * @return   the smallest value in the array
 	 */
 	public static double getMin(int a[]) {
-		// TODO: Write this code without sorting the array
+		// Discuss: Write this code without sorting the array/causing side-effects?
 	}
 
 	/**
@@ -53,7 +54,7 @@ class Test
 	 * @return   an array containing the lowest and highest values of array
 	 */
 	public static double[] getRange(int a[]) {
-		// TODO: Write this code
+		// Discuss: Write this code
 	}
 
 	/**
@@ -67,6 +68,8 @@ class Test
 		System.out.println("Max: " + getMean(a));
 		int range[] = getRange(a);
 		System.out.println("Range: " + range[0] + "-" + range[1]);
+		// Discuss: Any bugs/typos, etc?
+		// Discuss: Possible optimizations?
 	}
 
 }
