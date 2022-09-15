@@ -1,7 +1,7 @@
 // Sample Java program to do basic array manipulation
 import java.util.*;
 
-class Sample
+class ArrayPP
 {
 	/**
 	 * @param a  array to evaluate
@@ -23,10 +23,12 @@ class Sample
 	 */
 	public static double getMedian(int a[]) {
 		Arrays.sort(a);
-		return a[n/2];
+		if (size%2 != 0)
+			return a[size/2];
+		return a[size/2] + a[size/2-1]			
 		// What all is wrong with this code?
 		// Is the array sorted in place or do we get a new copy?
-		// Do you know if it's a deep copy or shallow copy?
+		//  you know if it's a deep copy or shallow copy?
 		// What's the big-O analysis of sort?
 	}
 
@@ -54,6 +56,14 @@ class Sample
 	 * @return   an array containing the lowest and highest values of array
 	 */
 	public static double[] getRange(int a[]) {
+		// Discuss: Write this code
+	}
+
+	/**
+	 * @param a  the array to copy
+	 * @return   Creates a deep copy of the array
+	 */
+	public static double[] Copy(int a[]) {
 		// Discuss: Write this code
 	}
 
