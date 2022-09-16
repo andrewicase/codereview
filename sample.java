@@ -2,13 +2,26 @@
 import java.util.*;
 
 class ArrayPP
-{
+{	
+	/**
+	 * @param a  array to evaluate
+	 * @return   the total of all values in an array
+	 */
+	public static double GetTotal(int a[]) {
+		int size = a.Length;
+		int sum = 0;
+		for (int i = 0; i < size; i++)
+			sum += a[i];
+		return sum;
+		// Discus: Could this be optimized at all?
+	}
+
 	/**
 	 * @param a  array to evaluate
 	 * @return   the arithmetic mean of the array
 	 */
 	public static double getMean(int a[]) {
-		size = a.Length;
+		int size = a.Length;
 		int sum = 0;
 		for (int i = 0; i < size; i++)
 			sum += a[i];
@@ -63,7 +76,7 @@ class ArrayPP
 	 * @param a  the array to copy
 	 * @return   Creates a deep copy of the array
 	 */
-	public static double[] Copy(int a[]) {
+	public static int[] Copy( a[]) {
 		// Discuss: Write this code
 	}
 
